@@ -61,7 +61,7 @@ class Config:
     BOT_USERNAME=None
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", "-1001155764097 -1001365031462"))
+    CHAT = int(os.environ.get("CHAT", "-1001155764097"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "-1001365031462")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
