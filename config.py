@@ -54,15 +54,15 @@ class Config:
     ADMIN = os.environ.get("ADMINS", '')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_ID = int(os.environ.get("API_ID", '4955697'))
+    API_HASH = os.environ.get("API_HASH", "983f6f5c52798f95bf5b9dcf7fc2bda7")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1951664181:AAFJ_BKOMW4kIpNSodGEIhY2cIcDn-okeAQ")     
+    SESSION = os.environ.get("SESSION_STRING", "AQCbSVI6jRbQQ8GAqoP8aobkxxvzp18kTQO2OJ2606eCx3D69qyzwBIX-mg6bzBr-dSPnouXkUyCG2hkctIRcMmrLHu_ZWPKyvrE2LNzrKDlwes77VbPnOs_LY7u2A6b3G7XW_U1U21AcviiB_mp0QFFCljdi8eXxsl1uCtqD8ThDJnAMbchPWudY4RofAlYeq6qYqjX_HcBcx-HoXHO3Mb6q_GhUkEvigX8OCL-CxUySRRB2MjN1qQLsx4cEggXLxfM3tqiTZm9nyiQDBSyVKNnJX-QxZfuSb391ff7cXb5kBC2dSy0E4EZkMao0I-BxfjN-oOiBC1iImnUhrs0xZFTbBUkPAA")
     BOT_USERNAME=None
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    CHAT = int(os.environ.get("CHAT", "-1001155764097 -1001365031462"))
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001365031462")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
@@ -86,7 +86,7 @@ class Config:
 
     #Optional Configuration
     SHUFFLE=bool(os.environ.get("SHUFFLE", True))
-    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "N")
+    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "Y")
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", None)
     if REPLY_MESSAGE:
         REPLY_MESSAGE=REPLY_MESSAGE
